@@ -1,0 +1,291 @@
+
+/* ************* GENERAL ************* */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix {zoom:1}
+.clearfix::after {
+    content:'.';
+    clear:both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+html, 
+body {
+    direction: rtl;
+    background-color: #ffffff;
+    color: #232323;
+    font-family: "Arimo";
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.container{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.red {color: #ff4a4a !important;}
+.red-focus:focus {border: 1px solid #ff4a4a !important;}
+
+/* ************* TOP ************* */
+
+.top {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(back.jpg);
+    background-size: cover;
+    padding: 30px 0 40px 0;
+    text-align: center;
+}
+
+.budget {
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.display-value {
+    font-size: 230%;
+}
+
+
+.budget-income,
+.budget-expense {
+    width: 35%;         
+    padding: 13px 20px 13px 5px;
+    border-radius: 1px;
+    margin: 0 auto;                    
+}
+
+.budget-income {
+    background-color: #00cbb7;
+    margin-bottom: 8px;                
+}
+
+.budget-expense {
+    background-color: #ff4a4a;
+}
+
+.budget-income-text,
+.budget-expense-text,
+.budget-income-value,
+.budget-expense-value,
+.budget-income-percentage,
+.budget-expense-percentage {
+    font-size: 110%;
+}
+
+.budget-income-text,
+.budget-expense-text {
+    float: right;
+}
+
+.budget-income-value,
+.budget-expense-value,
+.budget-income-percentage,
+.budget-expense-percentage {
+    float: left;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.budget-income-percentage,
+.budget-expense-percentage {
+    width: 35px;
+    font-size: 11px;
+    padding: 4px 0;
+    margin-right: 8px;
+}
+
+.budget-expense-percentage {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    border-radius: 3px;
+}
+
+/* ************* MIDDLE ************* */
+
+.new {
+    background-color: #f7f7f7;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.new-type,
+.new-description,
+.new-value {
+    padding: 12px;
+    font-size: 100%;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: 1px solid #e9e6e6;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.new-type:focus ,
+.new-description:focus,
+.new-value:focus {
+    outline: none;
+    border: 1px solid #00cbb7;
+}
+
+.new-description {
+    width: 40%;    
+    margin-right: 5px;
+}
+
+.new-value {
+    width: 12%;      
+    margin-right: 5px;
+}
+
+.new-type {
+    padding: 11px;
+}
+
+select {
+    font-family: 'FontAwesome', 'sans-serif';
+}
+
+.new-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 250%;
+    vertical-align: middle;
+    margin-right: 10px;
+    color:  #00cbb7;
+    transition: 0.3s;
+}
+
+.new-btn:active {
+    transform: translateY(2px);
+}
+
+.new-btn:focus {
+    outline: none;
+}
+
+/* ************* BOTTOM ************* */
+
+.bottom {
+    text-align: center;
+    /* padding-left: 20%;
+    padding-right: 20%; */
+}
+
+.bottom .container{
+    display: flex;
+    justify-content: center;
+}
+
+.income,
+.expense {
+    width: 45%;
+}
+
+.income {
+    float: right;
+    margin-left: 40px;
+}
+
+.expense {
+    display: inline-block;
+}
+
+h2 {
+    font-size: 150%;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.income h2 {
+    color: #00cbb7;
+}
+
+.expense h2{
+    color:  #ff4a4a;
+}
+
+.item {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.item:first-child {
+    border-top: 1px solid #e7e7e7;
+}
+
+.item:nth-child(even){
+    background-color: #f7f7f7;
+}
+
+.item-description,
+.item-value,
+.item-percentage {
+    padding: 12px;
+}
+
+.item-description{
+    float: right;
+}
+
+.item-value {
+    float: left;
+}
+
+.item-percentage {
+    float: left;
+    margin: 12px 10px 0 10px;
+    font-size: 11px;
+    background-color: #FFDAD9;
+    color: #ff4a4a;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.delete-btn {
+    float: left;
+    font-size: 150%;
+    line-height: 42px;
+    width: 0;
+    background-color: #ff4a4a;
+    color: white;
+    height: 42px;
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.item:hover .delete-btn {
+    width: 45px;
+    opacity: 1;
+}
+
+.item:hover .delete-btn:active {
+    transform: translateY(2px);
+}
+
+.income .item-value {
+    color: #00cbb7;
+}
+
+.expense .item-value{
+    color: #ff4a4a;
+}
+
+/*#copyright {
+    margin-top: 100px;
+}*/

@@ -1,0 +1,308 @@
+@media only screen and (min-width: 1361px) {
+
+    .top .container {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 26px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .budget-income,
+    .budget-expense {
+        width: 40%;         
+    }   
+
+    .new-description {
+        width: 25%;    
+        margin-right: 5px;
+    }
+    
+    .new-value {
+        width: 6%;      
+        margin-right: 5px;
+    }
+    .bottom .container{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .income,
+    .expense {
+        width: 100%;
+    }
+
+    .income {
+        margin-bottom: 40px;
+        margin-left: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 1360px) {
+
+    .top .container {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 26px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .budget-income,
+    .budget-expense {
+        width: 50%;         
+    }   
+
+    .new-description {
+        width: 30%;    
+        margin-right: 5px;
+    }
+    
+    .new-value {
+        width: 7%;      
+        margin-right: 5px;
+    }
+
+    .bottom .container{
+        display: flex;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .income,
+    .expense {
+        width: 100%;
+    }
+
+    .income {
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+}
+
+/* Big tablet to 1200px (widths smaller that the 1140px row) */
+@media only screen and (max-width: 1200px) {
+
+    .top .container {
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 26px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .budget-income,
+    .budget-expense {
+        width: 75%;         
+    }   
+
+    .new-description {
+        width: 45%;    
+        margin-right: 5px;
+    }
+    
+    .new-value {
+        width: 15%;      
+        margin-right: 5px;
+    }
+
+    .new-description {
+        width: 40%;    
+        margin-right: 5px;
+    }
+    
+    .new-value {
+        width: 10%;      
+        margin-right: 5px;
+    }
+
+    .bottom .container{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .income,
+    .expense {
+        width: 100%;
+    }
+
+    .income {
+        margin-bottom: 40px;
+        margin-left: 30px;
+    }
+
+    
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+    h1 {
+        font-size: 26px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .budget-income,
+    .budget-expense {
+        width: 80%;         
+    }       
+    
+    .new-description {
+        width: 45%;    
+        margin-right: 5px;
+    }
+    
+    .new-value {
+        width: 12%;      
+        margin-right: 5px;
+    }
+
+    .bottom .container{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .income {
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    
+
+}
+
+
+/* Small phones to small tablets: from 576px to 767px */
+@media only screen and (max-width: 767px) {
+
+    .top .container {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 24px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    
+    .display-value {
+        font-size: 230%;
+    }
+
+    .budget-income,
+    .budget-expense {
+        width: 95%;         
+    }  
+
+    .new-description {
+        width: 50%;    
+        margin-right: 5px;
+    }
+    
+    .new-value {
+        width: 18%;      
+        margin-right: 5px;
+    }
+
+    .bottom .container{
+        display: block;
+        width: 70%;
+    }
+
+    .income,
+    .expense {
+        width: 100%;
+    }
+
+    .income {
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+    
+}
+
+
+/* Small phones to small tablets: from 481px to 575px */
+@media only screen and (max-width: 575px) {
+
+    .top .container {
+        width: 65%;
+    }
+
+    h1 {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    
+    .display-value {
+        font-size: 260%;
+    }
+
+    .budget-income,
+    .budget-expense {
+        width: 100%;       
+    } 
+    
+    .budget-income-percentage,
+    .budget-expense-percentage {
+        /* width: 35px; */
+        font-size: 11px;
+        padding: 4px 0;
+        margin-right: 8px;
+    }
+
+    .bottom .container{
+        display: block;
+        width: 70%;
+    }
+
+    .income {
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+
+}
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .display-value {
+        font-size: 255%;
+    }
+
+
+    .new-description {
+        width: 65%;    
+        margin-right: 5px;
+    }
+    
+    .new-value {
+        width: 60%;      
+        margin-right: 5px;
+    }
+
+    .income,
+    .expense {
+        width: 100%;
+    }
+}
+

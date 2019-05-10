@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Budget</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+
+    
+</head>
+<body>
+    <div class="top">
+        <div class="container">
+            <div class="budget">
+                <div class="budget-value">
+                    <h1>
+                        התקציב שלי לחודש
+                        <span class = "display-date">*חודש* *שנה*</span>
+                    <br>
+                    <span class="display-value">0.00</span> 
+                    </h1>
+                </div>                
+                <div class="budget-income clearfix">
+                    <div class="budget-income-percentage">&nbsp;</div>
+                    <div class="budget-income-text">זכות</div>
+                    <div class="budget-income-value">0.00</div>  
+                    
+                </div>
+                <div class="budget-expense clearfix ">
+                    <div class="budget-expense-percentage">---</div>
+                    <div class="budget-expense-text">חובה</div>
+                    <div class="budget-expense-value">0.00</div>
+                    
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="middle">
+        <div class="new">
+            <!-- <div class="container"> -->
+                <select class="new-type">
+                    <option value="inc" selected>&#xf067;</option>
+                    <option value="exp">&#xf068;</option>
+                </select>
+                <input type="text" class="new-description" placeholder="תיאור הכנסה/הוצאה">
+                <input type="number" class="new-value" placeholder="מחיר">
+                <button class="new-btn"><i class="fas fa-pen-square"></i></button>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="container">
+            <div class="income">    
+                <div class="title">
+                    <h2>הכנסות</h2>
+                </div>
+                <div class="income-list">
+                    <!-- <div class="item clearfix" id="inc-0">
+                        <div class="delete-btn">
+                           <i class="fas fa-trash-alt"></i>
+                        </div>
+                        <div class="item-description">משכורת</div>
+                        <div class="item-value">5400</div>
+                    </div>
+                    <div class="item clearfix" id="inc-1">
+                        <div class="delete-btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                        <div class="item-description">מילואים</div>
+                        <div class="item-value">1000</div>
+                    </div>
+                    <div class="item clearfix" id="inc-2">
+                        <div class="delete-btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                        <div class="item-description">מתנה</div>
+                        <div class="item-value">500</div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="expense">    
+                <div class="title">
+                    <h2>הוצאות</h2>
+                </div>
+                <div class="expense-list">
+                    <!-- <div class="item clearfix" id="exp-0">
+                        <div class="delete-btn">
+                           <i class="fas fa-trash-alt"></i>
+                        </div>
+                        <div class="item-percentage">21%</div>
+                        <div class="item-description">שכר דירה</div>
+                        <div class="item-value">2000</div>
+                    </div>
+                    <div class="item clearfix" id="exp-1">
+                        <div class="delete-btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                        <div class="item-percentage">19%</div>
+                        <div class="item-description">גן של הילד</div>
+                        <div class="item-value">1620</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- <div>
+			<p id="copyright">
+				.Copyright &copy; 2019 by Avi Peretz. All rights reserved
+			</p>
+		</div> -->
+    </div>
+            
+    <script src="jquery-3.2.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
